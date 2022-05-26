@@ -6,5 +6,4 @@
 * `pip3 install requirements.txt`
 * Then find TOKEN in `StatusBot.py` and change the value to your bot's token
 * `python3 StatusBot.py`
-* 
 * Enjoy!
