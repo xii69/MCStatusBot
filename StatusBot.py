@@ -1,4 +1,4 @@
-import os
+from os import system, name
 import discord
 
 from discord import Activity
@@ -18,7 +18,7 @@ async def on_ready():
         pass
     else:
         Status_Update.start()
-    os.system("clear") # If you are using Windows, change it to "cls"
+    system('cls' if name == 'nt' else 'clear') 
     await aprint(f"Ready! ({client.user})")
 
 @tasks.loop(seconds=REFRESH_RATE)
